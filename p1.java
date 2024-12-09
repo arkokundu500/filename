@@ -1,7 +1,13 @@
+import java.util.Scanner;
+
 public class PrimeNumberIdentification {
 
     public static void main(String[] args) {
-        int number = 29; // You can change this number to test other values
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        scanner.close();
+
         if (isPrime(number)) {
             System.out.println(number + " is a prime number.");
         } else {
